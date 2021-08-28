@@ -36,8 +36,8 @@ async function sendMail(user, callback) {
     port: 587,
     secure: false, // true for 465, false for other ports
     auth: {
-      user: process.env.EMAIL,
-      pass: process.env.PASSWORD
+      user: process.env.EMAIL.toString(),
+      pass: process.env.PASSWORD.toString()
     }
   });
 
